@@ -71,7 +71,7 @@ Cada linha do Excel gerado representa um procedimento odontológico, com as segu
 
 ## 🚧 Próximos passos
 
-- Suporte a novos modelos de convênios (Amil, Bradesco, etc.)
+- Suporte a novos modelos de convênios (Amil, Rede Unna, etc.)
 - Interface para seleção do convênio no início da execução
 - Upload automático para planilhas online (ex: Google Sheets)
 
