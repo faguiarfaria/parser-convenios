@@ -19,8 +19,10 @@ Este projeto tem como objetivo extrair e estruturar automaticamente os dados de 
 parser-convenios/
 ├── extratores/
 │   └── parser_unimed_comentado.py       # Script com parser da Unimed, comentado
+│   └── parser_redeunna_comentado.py     # Script com parser da Rede Unna, comentado
 ├── notebooks/
 │   └── parser_unimed_colab_xls.ipynb    # Notebook para execução no Google Colab
+│   └── parser_redeunna_colab_xls.ipynb  # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
 ```
@@ -29,8 +31,8 @@ parser-convenios/
 
 ## ▶️ Como rodar no Google Colab
 
-1. Acesse o notebook no Colab:  
-   👉 [Abrir no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
+1. Para Unimed Odonto, acesse o notebook no Colab:  
+   👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
 
 2. No menu superior, clique em `Arquivo > Salvar uma cópia no Drive` (opcional).
 
@@ -48,6 +50,10 @@ parser-convenios/
 5. Execute as próximas células normalmente.
 
 6. O notebook irá gerar e exibir um botão para download do arquivo `procedimentos_unimed.xlsx`.
+
+Para Rede Unna, pelo Colab: 
+   👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
+
 
 ---
 
