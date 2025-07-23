@@ -31,28 +31,33 @@ parser-convenios/
 
 ## ▶️ Como rodar no Google Colab
 
-1. Para Unimed Odonto, acesse o notebook no Colab:  
-   👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
+1 - UNIMED ODONTO
 
-2. No menu superior, clique em `Arquivo > Salvar uma cópia no Drive` (opcional).
+   1.1. Para Unimed Odonto, acesse o notebook no Colab:  
+      👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
 
-3. Execute primeiro a célula [1] para instalar as dependências (autorize e execute):
-   ```python
-   !pip install pdfplumber openpyxl pandas
-   ```
+   1.2. Execute Passo 1 para instalar as dependências (autorize e execute):
+      ```python
+      !pip install pdfplumber openpyxl pandas
+      ```
 
-4. Faça o upload do relatório PDF da Unimed Odonto ao executar a célula [2] (ex: `Relatorio_Unimed_2025_06.pdf`).
-   ```python
-   from google.colab import files
-   uploaded = files.upload()
-   ```
+   1.3. Faça o upload do relatório PDF da Unimed Odonto (ex: `Relatorio_Unimed_2025_06.pdf`) ao executar o Passo 2 e clicar no botão que será gerado de "escolher arquivo" (choose file).
+      ```python
+      from google.colab import files
+      uploaded = files.upload()
+      ```
 
-5. Execute as próximas células normalmente.
+   1.4. Siga o passo a passo até a última célula, notebook irá gerar e exibir um botão para download do arquivo `procedimentos_unimed.xlsx`.
 
-6. O notebook irá gerar e exibir um botão para download do arquivo `procedimentos_unimed.xlsx`.
+   IMPORTANTE: Caso queira customizar/alterar o código, no menu superior clique em `Arquivo > Salvar uma cópia no Drive` (opcional, e necessita de uma conta no google drive).
 
-Para Rede Unna, pelo Colab: 
-   👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
+2 - REDE UNNA
+
+   2.1. Para Rede Unna, pelo Colab: 
+      👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
+
+   2.2. Siga o passo a passo como da unimed odonto.
+
 
 
 ---
