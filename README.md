@@ -1,10 +1,10 @@
-# 🦷 Parser de Relatórios de Convênios Odontológicos
+# 🦷 parser-convenios
 
-Este projeto tem como objetivo extrair e estruturar automaticamente os dados de faturamento contidos nos relatórios em PDF fornecidos por convênios odontológicos, cconvertendo-os em planilhas Excel para análise e integração.
+Ferramenta para extrair dados de relatórios PDF de convênios odontológicos (Unimed Odonto e Rede Unna), convertendo-os em planilhas Excel para análise e integração.
 
 ---
 
-## 🛠️ Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 parser-convenios/
@@ -16,39 +16,41 @@ parser-convenios/
 │   └── parser_redeunna_colab_xls.ipynb  # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
-└── LICENSE                              # Linceça de uso MIT
+└── LICENSE                              # Licença de uso MIT
+```
 
 ---
 
 ## ▶️ Como rodar no Google Colab
 
-1 - UNIMED ODONTO
+### 1 - UNIMED ODONTO
 
-   1.1. Para Unimed Odonto, acesse o notebook no Colab:
+#### 1.1. Acesse o notebook no Colab:
 👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
 
-   1.2. Execute Passo 1 para instalar as dependências (autorize e execute):
-      ```python
-      !pip install pdfplumber openpyxl pandas
-      ```
+#### 1.2. Execute o Passo 1 no notebook para instalar as dependências:
+```python
+!pip install pdfplumber openpyxl pandas
+```
 
-   1.3. Faça o upload do relatório PDF da Unimed Odonto (ex: `Relatorio_Unimed_2025_06.pdf`) ao executar o Passo 2 e clicar no botão que será gerado de "escolher arquivo" (choose file).
-      ```python
-      from google.colab import files
-      uploaded = files.upload()
-      ```
+#### 1.3. Faça o upload do relatório PDF da Unimed Odonto (ex: `Relatorio_Unimed_2025_06.pdf`) ao executar o Passo 2 e clicar em "Escolher arquivo":
+```python
+from google.colab import files
+uploaded = files.upload()
+```
 
-   1.4. Siga o passo a passo até a última célula, notebook irá gerar e exibir um botão para download do arquivo `procedimentos_unimed.xlsx`.
+#### 1.4. Siga as células do notebook até o final. Ele irá gerar e exibir um botão para download do arquivo `procedimentos_unimed.xlsx`.
 
-   IMPORTANTE: Caso queira customizar/alterar o código, no menu superior clique em `Arquivo > Salvar uma cópia no Drive` (opcional, e necessita de uma conta no google drive).
+> 💡 *Para customizar ou salvar sua própria versão, clique no menu `Arquivo > Salvar uma cópia no Drive` (necessita conta Google).*
 
-2 - REDE UNNA
+---
 
-   2.1. Para Rede Unna, pelo Colab: 
+### 2 - REDE UNNA
+
+#### 2.1. Acesse o notebook no Colab:
 👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
 
-   2.2. Siga o passo a passo como da unimed odonto.
-
+#### 2.2. Siga o mesmo passo a passo usado na Unimed Odonto para instalar pacotes, fazer upload e baixar a planilha gerada.
 
 ## 🚧 Próximos passos
 
@@ -59,14 +61,13 @@ parser-convenios/
 
 ## 📋 Requisitos
 
-Se desejar rodar localmente, instale os pacotes com:
+Se desejar rodar localmente, instale as dependências com:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 
-## 👨‍💻 Autor
+## 📄 Licença
 
-Fernando Faria  
-🔗 [GitHub: @faguiarfaria](https://github.com/faguiarfaria)
+Este projeto está licenciado sob os termos da [Licença MIT](./LICENSE).
