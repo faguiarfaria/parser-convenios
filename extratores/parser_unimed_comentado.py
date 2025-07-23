@@ -87,8 +87,8 @@ if __name__ == "__main__":
     # Executa a função e obtém o DataFrame com os dados extraídos
     df = extrair_dados_unimed_corrigido(pdf_path)
 
-    # Exporta para Excel (.xls)
-    saida = "procedimentos_unimed.xls"
-    df.to_excel(saida, index=False)
+    # Exporta para Excel moderno (.xlsx) com engine openpyxl
+    saida = "procedimentos_unimed.xlsx"
+    df.to_excel(saida, index=False, engine='openpyxl')
 
     print(f"Arquivo exportado com sucesso: {saida}")
