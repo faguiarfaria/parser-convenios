@@ -64,25 +64,14 @@ parser-convenios/
 
 ## 📄 Formato de Saída
 
-Cada linha do Excel gerado representa um procedimento odontológico, com as seguintes colunas (os dados estarão em formato texto):
+Arqiuvo excel co mos dados extraídos.
 
-1. Data do atendimento  
-2. Código do paciente  
-3. Nome do paciente  
-4. Descrição do procedimento  
-5. Detalhe (DT/área anatômica)  
-6. Face  
-7. Número da GTO  
-8. Status (realizado, glosado etc.)  
-9. Valor do procedimento (R$)  
-10. Valor glosado (R$)  
-11. Valor final após glosa (R$)
 
 ---
 
 ## 🚧 Próximos passos
 
-- Suporte a novos modelos de convênios (Amil, Rede Unna, etc.)
+- Suporte a novos modelos de convênios (PASA, MetLife, etc.)
 - Interface para seleção do convênio no início da execução
 - Upload automático para planilhas online (ex: Google Sheets)
 
