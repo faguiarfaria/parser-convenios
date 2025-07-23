@@ -1,15 +1,6 @@
 # 🦷 Parser de Relatórios de Convênios Odontológicos
 
-Este projeto tem como objetivo extrair e estruturar automaticamente os dados de faturamento contidos nos relatórios em PDF fornecidos por convênios odontológicos, como a **Unimed Odonto**.
-
----
-
-## 📌 Funcionalidades
-
-- Conversão de relatórios PDF em tabelas estruturadas.
-- Extração de cada procedimento odontológico por linha.
-- Geração de arquivos `.xlsx` organizados, prontos para análise.
-- Suporte inicial ao modelo da **Unimed Odonto** (competência: Junho/2025).
+Este projeto tem como objetivo extrair e estruturar automaticamente os dados de faturamento contidos nos relatórios em PDF fornecidos por convênios odontológicos, cconvertendo-os em planilhas Excel para análise e integração.
 
 ---
 
@@ -25,7 +16,7 @@ parser-convenios/
 │   └── parser_redeunna_colab_xls.ipynb  # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
-```
+└── LICENSE                              # Linceça de uso MIT
 
 ---
 
@@ -57,14 +48,6 @@ parser-convenios/
       👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
 
    2.2. Siga o passo a passo como da unimed odonto.
-
-
-
----
-
-## 📄 Formato de Saída
-
-Arqiuvo excel co mos dados extraídos.
 
 
 ---
