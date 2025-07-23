@@ -50,15 +50,12 @@ parser-convenios/
    2.2. Siga o passo a passo como da unimed odonto.
 
 
----
-
 ## 🚧 Próximos passos
 
 - Suporte a novos modelos de convênios (PASA, MetLife, etc.)
 - Interface para seleção do convênio no início da execução
 - Upload automático para planilhas online (ex: Google Sheets)
 
----
 
 ## 📋 Requisitos
 
@@ -68,7 +65,6 @@ Se desejar rodar localmente, instale os pacotes com:
 pip install -r requirements.txt
 ```
 
----
 
 ## 👨‍💻 Autor
 
