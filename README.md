@@ -11,11 +11,11 @@ parser-convenios/
 ├── extratores/
 │   └── parser_unimed.py       # Script com parser da Unimed, comentado
 │   └── parser_redeunna.py     # Script com parser da Rede Unna, comentado
-│   └── parser_metlife.py     # Script com parser da Rede Unna, comentado
+│   └── parser_metlife.py      # Script com parser da Rede Unna, comentado
 ├── notebooks/
 │   └── parser_unimed_colab.ipynb    # Notebook para execução no Google Colab
 │   └── parser_redeunna_colab.ipynb  # Notebook para execução no Google Colab
-│   └── parser_metlife_colab.ipynb  # Notebook para execução no Google Colab
+│   └── parser_metlife_colab.ipynb   # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
 └── LICENSE                              # Licença de uso MIT
