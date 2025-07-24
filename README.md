@@ -1,6 +1,6 @@
 # 🦷 parser-convenios
 
-Ferramenta para extrair dados de relatórios PDF de convênios odontológicos (Unimed Odonto e Rede Unna), convertendo-os em planilhas Excel para análise e integração.
+Ferramenta para extrair dados de relatórios PDF de convênios odontológicos, convertendo-os em planilhas Excel para análise e integração.
 
 ---
 
