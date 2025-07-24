@@ -9,11 +9,13 @@ Ferramenta para extrair dados de relatórios PDF de convênios odontológicos (U
 ```
 parser-convenios/
 ├── extratores/
-│   └── parser_unimed_comentado.py       # Script com parser da Unimed, comentado
-│   └── parser_redeunna_comentado.py     # Script com parser da Rede Unna, comentado
+│   └── parser_unimed.py       # Script com parser da Unimed, comentado
+│   └── parser_redeunna.py     # Script com parser da Rede Unna, comentado
+│   └── parser_metlife.py     # Script com parser da Rede Unna, comentado
 ├── notebooks/
-│   └── parser_unimed_colab_xls.ipynb    # Notebook para execução no Google Colab
-│   └── parser_redeunna_colab_xls.ipynb  # Notebook para execução no Google Colab
+│   └── parser_unimed_colab.ipynb    # Notebook para execução no Google Colab
+│   └── parser_redeunna_colab.ipynb  # Notebook para execução no Google Colab
+│   └── parser_metlife_colab.ipynb  # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
 └── LICENSE                              # Licença de uso MIT
@@ -26,7 +28,7 @@ parser-convenios/
 ### 1 - UNIMED ODONTO
 
 #### 1.1. Acesse o notebook no Colab:
-👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab_xls.ipynb)
+👉 [Abrir Parser UnimedOdonto no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_unimed_colab.ipynb)
 
 #### 1.2. Execute o Passo 1 no notebook para instalar as dependências:
 ```python
@@ -48,16 +50,18 @@ uploaded = files.upload()
 ### 2 - REDE UNNA
 
 #### 2.1. Acesse o notebook no Colab:
-👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab_xls.ipynb)
+👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_redeunna_colab.ipynb)
 
 #### 2.2. Siga o mesmo passo a passo usado na Unimed Odonto para instalar pacotes, fazer upload e baixar a planilha gerada.
 
-## 🚧 Próximos passos
+### 3 - METLIFE
 
-- Suporte a novos modelos de convênios (PASA, MetLife, etc.)
-- Interface para seleção do convênio no início da execução
-- Upload automático para planilhas online (ex: Google Sheets)
+#### 3.1. Acesse o notebook no Colab:
+👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_metlife_colab.ipynb)
 
+#### 3.2. Siga o mesmo passo a passo dos anteriores.
+
+---
 
 ## 📋 Requisitos
 
