@@ -11,7 +11,6 @@ parser-convenios/
 ├── extratores/
 │   └── parser_unimed.py       # Script com parser da Unimed, comentado
 │   └── parser_redeunna.py     # Script com parser da Rede Unna, comentado
-<<<<<<< HEAD
 │   └── parser_metlife.py      # Script com parser da Metlife, comentado
 │   └── parser_metlife_s.py    # Script com parser da Metlife Sintetico, comentado
 ├── notebooks/
