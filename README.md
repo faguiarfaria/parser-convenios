@@ -11,11 +11,13 @@ parser-convenios/
 ├── extratores/
 │   └── parser_unimed.py       # Script com parser da Unimed, comentado
 │   └── parser_redeunna.py     # Script com parser da Rede Unna, comentado
-│   └── parser_metlife.py     # Script com parser da Rede Unna, comentado
+│   └── parser_metlife.py      # Script com parser da Metlife, comentado
+│   └── parser_metlife_s.py    # Script com parser da Metlife Sintetico, comentado
 ├── notebooks/
-│   └── parser_unimed_colab.ipynb    # Notebook para execução no Google Colab
-│   └── parser_redeunna_colab.ipynb  # Notebook para execução no Google Colab
-│   └── parser_metlife_colab.ipynb  # Notebook para execução no Google Colab
+│   └── parser_unimed_colab.ipynb       # Notebook para execução no Google Colab
+│   └── parser_redeunna_colab.ipynb     # Notebook para execução no Google Colab
+│   └── parser_metlife_colab.ipynb      # Notebook para execução no Google Colab
+│   └── parser_metlife_s_colab.ipynb    # Notebook para execução no Google Colab
 ├── requirements.txt                     # Dependências do projeto
 ├── README.md                            # Este arquivo
 └── LICENSE                              # Licença de uso MIT
@@ -54,12 +56,17 @@ uploaded = files.upload()
 
 #### 2.2. Siga o mesmo passo a passo usado na Unimed Odonto para instalar pacotes, fazer upload e baixar a planilha gerada.
 
+---
+
 ### 3 - METLIFE
 
 #### 3.1. Acesse o notebook no Colab:
-👉 [Abrir Parser RedeUnna no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_metlife_colab.ipynb)
+👉 [Abrir Parser METLIFE no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_metlife_colab.ipynb)
 
 #### 3.2. Siga o mesmo passo a passo dos anteriores.
+
+#### Caso esteja usando o relatório sintético, use o Parser METLIFE Sintetico: 
+👉 [Abrir Parser METLIFE Sintético no Colab](https://colab.research.google.com/github/faguiarfaria/parser-convenios/blob/main/notebooks/parser_metlife_s_colab.ipynb)
 
 ---
 

@@ -114,6 +114,8 @@ if __name__ == "__main__":
     # Recebe o caminho do PDF via linha de comando
     pdf_path = sys.argv[1]
 
+    # pdf_path = "/home/fernando/Downloads/metlife 2025-08-05 sintetico 9.pdf"
+
     # Executa a extração dos dados
     df = extrair_dados_metlife(pdf_path)
 
