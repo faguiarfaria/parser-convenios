@@ -1,6 +1,6 @@
 # 🦷 parser-convenios
 
-Ferramenta para extrair dados de relatórios PDF de convênios odontológicos (Unimed Odonto e Rede Unna), convertendo-os em planilhas Excel para análise e integração.
+Ferramenta para extrair dados de relatórios PDF de convênios odontológicos, convertendo-os em planilhas Excel para análise e integração.
 
 ---
 
@@ -11,6 +11,7 @@ parser-convenios/
 ├── extratores/
 │   └── parser_unimed.py       # Script com parser da Unimed, comentado
 │   └── parser_redeunna.py     # Script com parser da Rede Unna, comentado
+<<<<<<< HEAD
 │   └── parser_metlife.py      # Script com parser da Metlife, comentado
 │   └── parser_metlife_s.py    # Script com parser da Metlife Sintetico, comentado
 ├── notebooks/
