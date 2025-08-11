@@ -44,6 +44,15 @@ def extrair_dados_metlife_s(pdf_path):
     # Segundo loop: extrai as GTOs e seus dados
     i = 0  # reseta índice
     while i < len(linhas):
+
+        # Initialize variables at the beginning of each iteration
+        gto = ""
+        glosa = ""
+        valor_info = valor_glosa = valor_pago = 0.0
+        situação_gto = "P"
+        cod_paciente = ""
+        nome_social = ""
+        
         # Início de uma nova GTO é identificado por esta string
         if linhas[i].strip().startswith("GTO:"): 
 
@@ -58,8 +67,6 @@ def extrair_dados_metlife_s(pdf_path):
                 paciente_match = re.search(r"CÓDIGO/NOME BENEFICIÁRIO:\s*(\d{14})", linha_paciente)
                 cod_paciente = paciente_match.group(1) if paciente_match else ""
 
-                # Nome do paciente logo após o código de 14 dígitos
-                nome_social = ""
                 if cod_paciente:
                     tokens = linha_paciente.split()
                     try:
@@ -70,13 +77,7 @@ def extrair_dados_metlife_s(pdf_path):
                     except ValueError:
                         pass
 
-        # Captura o texto da glosa (justificativa)
-        glosa = ""  # Metlife não apresenta glosa nos seus demonstrativos
-
         # Procura os valores financeiros da GTO
-        valor_info = valor_glosa = valor_pago = 0.0
-        situação_gto = "P"  
-
         if linhas[i].strip().startswith("TOTAL DA GTO"): 
             linha_valores = linhas[i].strip()
 
